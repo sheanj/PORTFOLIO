@@ -14,7 +14,6 @@ export default class Landing extends Component {
           </h1>
           <div className="links">
             <h6>[Contact Me]</h6>
-            <a href=""><h6>[View My Resume]</h6></a>
             <h6>[Here's what I'm working on]</h6>
           </div>
         </div>
