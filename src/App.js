@@ -1,12 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Landing from './components/Landing/Landing'
+import React from "react";
+import "./App.css";
+import Landing from "./components/Landing/Landing";
+import { Route } from "react-router-dom";
+import Card from "./components/Contact/Card";
 
 function App() {
   return (
     <div className="App">
-      <Landing />
+      <Route exact path="/">
+        <Landing />
+      </Route>
+      <Route exact path="/contact">
+        <Card />
+      </Route>
     </div>
   );
 }
