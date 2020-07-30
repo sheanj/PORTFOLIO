@@ -164,7 +164,7 @@ h3 {
   top: 200%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   .landing {
     width: 100vw;
     height: 80vh;
@@ -182,7 +182,7 @@ h3 {
     flex-direction: column;
     position: relative;
     top: -8%;
-    left: -80%;
+    left: -75%;
     width: 100vw;
   }
 
