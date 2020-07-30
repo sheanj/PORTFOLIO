@@ -3,7 +3,9 @@ import "../Landing/Landing.css";
 import MyPortrait from "../../assets/me.jpeg";
 // import { Link } from "react-router-dom";
 import Card from "../Contact/Card";
-import ReactPageScroller from 'react-page-scroller';
+import FadeIn from 'react-fade-in';
+import Carrat from '../../assets/carrat.jsx'
+
 
 export default class Landing extends Component {
   render() {
@@ -12,6 +14,7 @@ export default class Landing extends Component {
         <header>
           <Card />
         </header>
+        <FadeIn>
         <viewport className="landing">
           <section className="greeting">
             <img src={MyPortrait} alt="pic" className="fade-in"/>
@@ -21,7 +24,8 @@ export default class Landing extends Component {
                 I'm a software engineer in Brooklyn.
               </h1>
                 <br />
-              <h3>Scroll to see what I'm working on.</h3>
+                <br />
+                  <Carrat />
               </span>
             </div>
           </section>
@@ -31,7 +35,8 @@ export default class Landing extends Component {
           <div className="project2">
           <h1>COVIDATA</h1>
           </div>
-        </viewport>
+          </viewport>
+        </FadeIn>
       </>
     );
   }

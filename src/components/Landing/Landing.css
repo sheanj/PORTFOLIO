@@ -63,14 +63,14 @@
   justify-content: center;
   align-items: center;
   width: 80vw;
-  height: 75vh;
+  height: 80vh;
   /* padding: 20px 0 0 20px; */
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 .greeting {
@@ -145,6 +145,7 @@ h3 {
   width: 100%;
   height: 100%;
   position: absolute;
+  border: 1px solid black;
 }
 
 .project1 {
@@ -154,5 +155,28 @@ h3 {
 .project2 {
   top: 200%;
 }
+
+@media only screen and (max-width: 375px) {
+  .landing {
+    width: 100vw;
+    height: 81vh;
+  }
+
+  .landing img {
+    position: relative;
+    top: 18%;
+    left: 28%;
+    border-radius: 0px;
+  }
+
+  .about {
+    flex-direction: column;
+    position: relative;
+    top: -15%;
+    left: -80%;
+    width: 40vw;
+  }
+}
+
 
 
