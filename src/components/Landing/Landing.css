@@ -85,6 +85,8 @@
 }
 
 .about {
+  position: relative;
+  left: -5%;
   flex-direction: column;
   color: transparent;
   background-clip: text;
@@ -118,8 +120,7 @@ header {
 }
 
 .landing img {
-  height: 50vh;
-  border-radius: 1000px;
+  height: 80vh;
 }
 
 a {
@@ -133,6 +134,7 @@ h3 {
   margin: 0;
   display: inline;
   text-align: left;
+  z-index: 1;
 }
 
 .greeting {
@@ -164,6 +166,7 @@ h3 {
 
   .landing img {
     position: relative;
+    height: 50vh;
     top: 18%;
     left: 28%;
     border-radius: 0px;
