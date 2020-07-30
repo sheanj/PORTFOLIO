@@ -56,7 +56,7 @@
   top: 0px;
   position: relative;
   margin: 0 auto;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
@@ -72,6 +72,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
 
 .greeting {
   display: flex;
@@ -108,15 +109,19 @@
 }
 
 header {
-  margin: 0 auto;
-  margin-top: 10px;
+  position: relative;
+  top: 0;
+  margin: 0px auto;
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 80vw;
-  height: 2vh;
+  height: inherit;
   justify-content: flex-end;
+  background-color: black;
+  z-index: 2;
 }
 
 .landing img {
@@ -134,7 +139,8 @@ h3 {
   margin: 0;
   display: inline;
   text-align: left;
-  z-index: 1;
+  /* color: transparent; */
+  /* z-index: 1; */
 }
 
 .greeting {
@@ -161,13 +167,13 @@ h3 {
 @media only screen and (max-width: 375px) {
   .landing {
     width: 100vw;
-    height: 81vh;
+    height: 80vh;
   }
 
   .landing img {
     position: relative;
     height: 50vh;
-    top: 18%;
+    top: 19%;
     left: 28%;
     border-radius: 0px;
   }
@@ -175,9 +181,18 @@ h3 {
   .about {
     flex-direction: column;
     position: relative;
-    top: -15%;
+    top: -8%;
     left: -80%;
-    width: 40vw;
+    width: 100vw;
+  }
+
+  header {
+    margin: 0 auto;
+    width: 100vw;
+    height: 5vh;
+    justify-content: flex-end;
+    background-color: black;
+    z-index: 2;
   }
 }
 
