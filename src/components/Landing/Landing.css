@@ -4,6 +4,7 @@
   -o-animation: fadeIn ease 5s;
   -ms-animation: fadeIn ease 5s;
   animation: fadeIn ease 5s;
+  behavior: "smooth";
 }
 
 @keyframes fadeIn {
@@ -52,6 +53,8 @@
 }
 
 .landing {
+  top: 0px;
+  position: relative;
   margin: 0 auto;
   margin-top: 10px;
   /* border: 1px solid black; */
@@ -67,6 +70,7 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
   overflow-y: scroll;
+  overflow-x: none;
 }
 
 .greeting {
@@ -82,9 +86,17 @@
 
 .about {
   flex-direction: column;
+  color: transparent;
+  background-clip: text;
   background-image: url(../../assets/background.png);
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-background-image: url(../../assets/background.png);
+  -moz-background-clip: text;
+  -moz-background-image: url(../../assets/background.png);
+  -o-background-clip: text;
+  -o-background-image: url(../../assets/background.png);
+  -ms-background-clip: text;
+  -ms-background-image: url(../../assets/background.png);
 }
 
 .project {
@@ -106,7 +118,7 @@ header {
 }
 
 .landing img {
-  height: 20vw;
+  height: 50vh;
   border-radius: 1000px;
 }
 
@@ -119,6 +131,28 @@ a {
 h6,
 h3 {
   margin: 0;
-  /* padding-left: 15px; */
+  display: inline;
   text-align: left;
 }
+
+.greeting {
+  text-align: left;
+}
+
+.project1, .project2 {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.project1 {
+  top: 100%;
+}
+
+.project2 {
+  top: 200%;
+}
+
+
