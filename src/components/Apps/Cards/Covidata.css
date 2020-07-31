@@ -1,0 +1,51 @@
+.covidContainer img {
+  position: relative;
+  left: 1%;
+  top: 1%;
+  zoom: 30%;
+}
+
+.covidHeader {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.covidHeader h1 {
+  font-family: "Bowlby One SC", cursive;
+  color: #c20114;
+  padding-left: 1%;
+}
+
+.covidBlurb {
+  text-align: justify;
+  position: relative;
+  left: 2%;
+  width: 50%;
+  padding-left: 2%;
+}
+
+.covidPreview {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: -280px;
+  left: 65%;
+}
+
+.covidPreview img {
+  /* zoom: 250%; */
+  height: 340vh;
+  box-shadow: 0 8px 6px -6px black;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+}
+
+.iframe {
+  position: relative;
+  height: 450px;
+  width: 275px;
+  top: -5500%;
+  left: 350%;
+}

@@ -1,0 +1,13 @@
+.curaContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(221, 226, 226);
+}
+
+.curaContainer img {
+  position: relative;
+  left: 1%;
+  top: 1%;
+  height: 25%;
+  width: auto;
+}
