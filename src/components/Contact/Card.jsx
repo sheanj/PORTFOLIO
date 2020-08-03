@@ -21,10 +21,11 @@ export default class Card extends Component {
         <IconContext.Provider
           value={{
             style: {
-              fontSize: "25px",
+              fontSize: "35px",
               color: "#ffffff",
               paddingLeft: "8px",
               paddingTop: "5px",
+              paddingRight: "8px"
             },
           }}
         >

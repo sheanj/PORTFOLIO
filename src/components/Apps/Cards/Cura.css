@@ -1,0 +1,39 @@
+.curaContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(221, 226, 226);
+}
+
+.curaContainer img {
+  position: relative;
+  left: 1%;
+  top: 1%;
+  height: 25%;
+  width: auto;
+}
+
+.curaHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.curaHeader img {
+  position: relative;
+  left: 1%;
+  top: 1%;
+  zoom: 50%;
+}
+
+.curaHeader h1 {
+  color: black;
+  padding-left: 3%;
+}
+
+.curaClose {
+  position: fixed;
+  left: 97%;
+  top: 8%;
+  z-index: 2;
+}
