@@ -6,6 +6,7 @@ import CovidataPreview from "../../../assets/CovidataPreview.png";
 import Iframe from "react-iframe";
 import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import CuraPreviewVideo from '../../../assets/CuraPreviewVideo.mp4';
 
 export default class Cura extends Component {
   newTab() {
@@ -45,7 +46,7 @@ export default class Cura extends Component {
           ) : (
             <></>
           )}
-          <div className="left">
+          <div className="curaLeft">
             <div className="curaHeader">
               <img src={CuraLogo} />
               <h1>CURA</h1>
@@ -96,9 +97,9 @@ export default class Cura extends Component {
               </ul>
             </div>
           </div>
-          <div className="right">
-            <div className="covidPreview" data-aos="fade-up">
-              <img src={CovidataPreview} />
+          <div className="curaRight">
+            <div className="curaVideo">
+              <video src={CuraPreviewVideo} width="110%" height="150%" preload="auto" autoplay controls loop  type="video/mp4" />
             </div>
           </div>
         </div>

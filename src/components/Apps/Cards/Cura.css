@@ -1,7 +1,13 @@
 .curaContainer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   background-color: rgb(221, 226, 226);
+}
+
+.curaRight, .curaLeft {
+  width: 50%;
 }
 
 .curaContainer img {
@@ -43,4 +49,15 @@
   border: none;
   color: transparent;
   border-radius: 100px;
+}
+
+.curaRight {
+  justify-content: center;
+  align-items: center;
+}
+
+.curaVideo video {
+  position: relative;
+  left: -20%;
+  margin-top: 20%;
 }

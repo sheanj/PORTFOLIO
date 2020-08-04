@@ -142,7 +142,7 @@ h3 {
   text-align: left;
 }
 
-.project1,
+.greeting, .project1,
 .project2 {
   padding: 0px;
   margin: 0px;
@@ -150,6 +150,12 @@ h3 {
   height: 100%;
   position: absolute;
   border: 1px solid black;
+  transition: 
+    transform 1000ms ease-in-out 0s;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 }
 
 .project1 {
