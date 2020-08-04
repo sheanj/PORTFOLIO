@@ -28,12 +28,19 @@
 
 .curaHeader h1 {
   color: black;
-  padding-left: 3%;
+  padding-left: 5%;
 }
 
 .curaClose {
   position: fixed;
-  left: 97%;
-  top: 8%;
+  left: 95.5%;
+  top: 6%;
   z-index: 2;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  border-radius: 100px;
 }

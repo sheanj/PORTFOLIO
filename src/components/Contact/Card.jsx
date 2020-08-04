@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import "./Card.css";
 import {
-  FaTwitter,
   FaEnvelope,
   FaPhone,
-  FaGit,
   FaGithub,
   FaLinkedin,
-  FaPage4,
-  FaPagelines,
-  FaHandPaper,
-  FaPaperclip,
+  FaPaperclip
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 

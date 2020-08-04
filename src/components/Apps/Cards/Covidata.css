@@ -74,7 +74,7 @@
 .covidHeader h1 {
   font-family: "Bowlby One SC", cursive;
   color: #c20114;
-  padding-left: 1%;
+  padding-left: 5%;
 }
 
 .covidBlurb {
@@ -118,7 +118,7 @@ transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
 .covidClose {
   position: fixed;
-  left: 97%;
+  left: 93%;
   top: 8%;
   z-index: 2;
 }
