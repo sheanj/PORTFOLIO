@@ -7,6 +7,7 @@ import FadeIn from "react-fade-in";
 import Carrat from "../../assets/carrat.jsx";
 import Cura from "../Apps/Cards/Cura";
 import Covidata from "../Apps/Cards/Covidata";
+import About from '../Apps/Cards/About'
 
 export default class Landing extends Component {
   state = {
@@ -44,7 +45,6 @@ export default class Landing extends Component {
         <header>
           <Card />
         </header>
-        {/* <FadeIn> */}
         <viewport className="landing">
           <section className="greeting">
             <img src={MyPortrait} alt="pic" className="fade-in" />
@@ -81,10 +81,9 @@ export default class Landing extends Component {
             />
           </div>
           <div className="project3">
-            <div></div>
+            <About />
           </div>
         </viewport>
-        {/* </FadeIn> */}
       </>
     );
   }

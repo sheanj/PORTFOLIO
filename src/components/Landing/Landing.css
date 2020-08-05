@@ -169,12 +169,13 @@ h3 {
 
 .project3 {
   top: 300%;
+  background-color: black;
 }
 
 @media only screen and (max-width: 500px) {
   .landing {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
   }
 
   .landing img {
@@ -212,4 +213,14 @@ h3 {
 
 .projectButtons {
   margin-left: 5%;
+}
+
+.iframe {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 6%;
+  left: 0;
+  z-index: 3;
+  
 }
