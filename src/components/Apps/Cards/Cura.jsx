@@ -99,7 +99,7 @@ export default class Cura extends Component {
           </div>
           <div className="curaRight">
             <div className="curaVideo">
-              <video src={CuraPreviewVideo} width="150%" height="auto" preload="auto" autoPlay loop  type="video/mp4" />
+              <video src={CuraPreviewVideo} width="150%" height="auto" autoPlay loop  type="video/mp4" />
             </div>
           </div>
         </div>
