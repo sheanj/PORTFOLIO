@@ -6,6 +6,7 @@ import CovidataPreview from "../../../assets/CovidataPreview.png";
 import Iframe from "react-iframe";
 import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import CuraPreviewVideo from '../../../assets/CuraPreviewVideo.mp4';
 
 export default class Cura extends Component {
   newTab() {
@@ -19,7 +20,7 @@ export default class Cura extends Component {
           {this.props.iFrame ? (
             <div className="iframe">
               <Iframe
-                url="http://localhost:3001/"
+                url="http://cura-app.netlify.app/"
                 width="100%"
                 height="100%"
                 display="initial"
@@ -45,7 +46,7 @@ export default class Cura extends Component {
           ) : (
             <></>
           )}
-          <div className="left">
+          <div className="curaLeft">
             <div className="curaHeader">
               <img src={CuraLogo} />
               <h1>CURA</h1>
@@ -70,7 +71,7 @@ export default class Cura extends Component {
                 </IconContext.Provider>
               </div>
             </div>
-            <div className="covidBlurb">
+            <div className="curaBlurb">
               <h3>
                 CURA was developed as an organizational tool to organize links, notes, task lists, and other digital media into a daily timeline format. 
               </h3>
@@ -96,9 +97,9 @@ export default class Cura extends Component {
               </ul>
             </div>
           </div>
-          <div className="right">
-            <div className="covidPreview" data-aos="fade-up">
-              <img src={CovidataPreview} />
+          <div className="curaRight">
+            <div className="curaVideo">
+              <video src={CuraPreviewVideo} width="150%" height="auto" preload="auto" autoPlay loop  type="video/mp4" />
             </div>
           </div>
         </div>

@@ -80,6 +80,9 @@ export default class Landing extends Component {
               close={this.closeCovidiFrame}
             />
           </div>
+          <div className="project3">
+            <div></div>
+          </div>
         </viewport>
         {/* </FadeIn> */}
       </>

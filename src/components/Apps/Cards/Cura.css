@@ -1,7 +1,13 @@
 .curaContainer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   background-color: rgb(221, 226, 226);
+}
+
+.curaRight, .curaLeft {
+  width: 50%;
 }
 
 .curaContainer img {
@@ -17,6 +23,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .curaHeader img {
@@ -43,4 +51,26 @@
   border: none;
   color: transparent;
   border-radius: 100px;
+}
+
+.curaRight {
+  justify-content: center;
+  align-items: center;
+}
+
+.curaVideo video {
+  position: relative;
+  left: 24%;
+  margin-top: 10%;
+}
+
+.curaBlurb {
+  position: relative;
+  left: 20%;
+  margin-top: 5%;
+  width: 60%;
+}
+
+.curaBlurb h3 {
+  color: grey;
 }
