@@ -14,7 +14,7 @@ export default class Covidata extends Component {
       <>
         <div className="covidContainer">
           {this.props.iFrame ? (
-            <div className="iframe">
+            <div className="iframe fade-in">
               <Iframe
                 url="https://pages.git.generalassemb.ly/sheanj/COVIDATA-19/"
                 width="100%"
@@ -74,6 +74,8 @@ export default class Covidata extends Component {
                 Covidata set out to be a data hub for the latest statistics and
                 news surrounding the Coronavirus Pandemic in the United States
               </h3>
+              <br />
+              <br />
               <h4>Current Development:</h4>
               <ul>
                 <li>

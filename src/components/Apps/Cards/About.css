@@ -1,0 +1,73 @@
+.component {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  width: 100vw;
+}
+
+.aboutDiv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 18%;
+  top: 20%;
+  background-color: black;
+  color: white;
+  width: 65%;
+}
+
+.aboutDiv h2 {
+  margin-top: 0;
+  text-align: justify;
+  color: transparent;
+  background-clip: text;
+  background-image: url(../../../assets/aboutbg.png);
+  -webkit-background-clip: text;
+  -webkit-background-image: url(../../../assets/aboutbg.png);
+  -moz-background-clip: text;
+  -moz-background-image: url(../../../assets/aboutbg.png);
+  -o-background-clip: text;
+  -o-background-image: url(../../../assets/aboutbg.png);
+  -ms-background-clip: text;
+  -ms-background-image: url(../../../assets/aboutbg.png);
+}
+
+.languageIcon {
+  position: relative;
+  top: -47vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  width: 100%;
+  height: 96%;
+}
+
+.languageIcon img {
+  zoom: 15%;
+  height: auto;
+  width: 5%;
+  padding-right: 1%;
+}
+@media only screen and (max-width: 500px) {
+  .aboutDiv {
+    top:0;
+    left: 18%;
+    width: 77%;
+    margin-top: 0;
+  }
+  
+  .aboutDiv h2 {
+    text-align: left;
+  }
+
+  .languageIcon {
+    top: -55%;
+    left: -52%;
+    width: 200%;
+  }
+
+  .languageIcon img {
+    width: 6%;
+  }
+}

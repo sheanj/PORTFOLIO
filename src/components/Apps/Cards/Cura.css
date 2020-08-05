@@ -74,3 +74,17 @@
 .curaBlurb h3 {
   color: grey;
 }
+
+.curaBlurb ul, li, h4 {
+  list-style-type: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .curaHeader img {
+    position: relative;
+    left: 1%;
+    top: 1%;
+    zoom: 80%;
+  }
+}
