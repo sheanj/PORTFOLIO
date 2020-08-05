@@ -69,6 +69,9 @@
   flex-direction: row;
   /* justify-content: center; */
   align-items: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  z-index: 2;
 }
 
 .covidHeader h1 {
@@ -121,4 +124,20 @@ transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   left: 93%;
   top: 8%;
   z-index: 2;
+}
+
+.covidBlurb {
+  position: relative;
+  left: 13%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.covidBlurb ul, li, h4 {
+  list-style-type: none;
+  margin: 0;
+}
+
+.covidBlurb h3 {
+  color: grey;
 }

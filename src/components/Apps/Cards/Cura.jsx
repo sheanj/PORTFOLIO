@@ -20,7 +20,7 @@ export default class Cura extends Component {
           {this.props.iFrame ? (
             <div className="iframe">
               <Iframe
-                url="http://localhost:3001/"
+                url="http://cura-app.netlify.app/"
                 width="100%"
                 height="100%"
                 display="initial"
@@ -71,7 +71,7 @@ export default class Cura extends Component {
                 </IconContext.Provider>
               </div>
             </div>
-            <div className="covidBlurb">
+            <div className="curaBlurb">
               <h3>
                 CURA was developed as an organizational tool to organize links, notes, task lists, and other digital media into a daily timeline format. 
               </h3>
@@ -99,7 +99,7 @@ export default class Cura extends Component {
           </div>
           <div className="curaRight">
             <div className="curaVideo">
-              <video src={CuraPreviewVideo} width="110%" height="150%" preload="auto" autoplay controls loop  type="video/mp4" />
+              <video src={CuraPreviewVideo} width="150%" height="auto" preload="auto" autoPlay loop  type="video/mp4" />
             </div>
           </div>
         </div>

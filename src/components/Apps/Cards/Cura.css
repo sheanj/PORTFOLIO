@@ -23,6 +23,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .curaHeader img {
@@ -58,6 +60,17 @@
 
 .curaVideo video {
   position: relative;
-  left: -20%;
-  margin-top: 20%;
+  left: 24%;
+  margin-top: 10%;
+}
+
+.curaBlurb {
+  position: relative;
+  left: 20%;
+  margin-top: 5%;
+  width: 60%;
+}
+
+.curaBlurb h3 {
+  color: grey;
 }
