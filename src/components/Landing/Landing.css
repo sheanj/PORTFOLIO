@@ -187,11 +187,10 @@ h3 {
   }
 
   .about {
-    flex-direction: column;
     position: relative;
     top: -8%;
     left: -75%;
-    width: 100vw;
+    width: 100%;
   }
 
   header {
@@ -202,6 +201,7 @@ h3 {
     background-color: black;
     z-index: 2;
   }
+
 }
 
 .btn {
@@ -221,6 +221,7 @@ h3 {
   width: 100%;
   top: 6%;
   left: 0;
-  z-index: 3;
-  
+  z-index: 3; 
 }
+
+
