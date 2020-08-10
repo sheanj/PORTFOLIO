@@ -51,6 +51,7 @@
   border: none;
   color: transparent;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 .curaRight {
@@ -83,8 +84,29 @@
 @media only screen and (max-width: 500px) {
   .curaHeader img {
     position: relative;
-    left: 1%;
+    left: -5%;
     top: 1%;
-    zoom: 80%;
+    zoom: 40%;
+  }
+
+  .curaLeft {
+    width: 100%;
+  }
+  
+  .curaBlurb {
+    position: relative;
+    left: 9%;
+    width: 100%;
+  }
+
+  .curaRight {
+    position: relative;
+    top: 70%;
+    left: -82%;
+  }
+
+  video {
+    width: 550%;
+    height: auto;
   }
 }

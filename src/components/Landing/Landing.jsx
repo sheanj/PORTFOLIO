@@ -51,7 +51,10 @@ export default class Landing extends Component {
             <div className="about fade-in">
               <span>
                 <h1>
-                  Hello, World. <br /> {"{"} My name is Shean && <br />
+                  Hello, World.
+                  <br />
+                  {"{"} My name is Shean &&
+                  <br />
                   I'm a software engineer in Brooklyn. {"}"}
                 </h1>
                 <br />
