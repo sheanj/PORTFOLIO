@@ -44,7 +44,7 @@ export default class Covidata extends Component {
           ) : (
             <></>
           )}
-          <div className="left">
+          <div className="covidLeft">
             <div className="covidHeader">
               <img src={Covid} alt="covid particle"/>
               <h1>COVIDATA</h1>
@@ -112,7 +112,7 @@ export default class Covidata extends Component {
               </ul>
             </div>
           </div>
-          <div className="right">
+          <div className="covidRight">
             <div className="covidPreview" data-aos="fade-up">
               <img src={CovidataPreview} />
             </div>
