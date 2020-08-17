@@ -34,13 +34,13 @@
 
 .languageIcon {
   position: relative;
-  top: -45%;
+  top: -25%;
   left: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: flex-end;
-  width: 100%;
+  width: inherit;
   height: 96%;
 }
 
