@@ -7,6 +7,7 @@ import Iframe from "react-iframe";
 import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CuraPreviewVideo from '../../../assets/CuraPreviewVideo.mp4';
+import CuraPreview from '../../../assets/CuraPreview.png'
 
 export default class Cura extends Component {
   newTab() {
@@ -101,7 +102,8 @@ export default class Cura extends Component {
           </div>
           <div className="curaRight" >
             <div className="curaVideo">
-              <video src={CuraPreviewVideo} width="150%" height="auto" autoPlay loop  type="video/mp4" />
+              {/* <video src={CuraPreviewVideo} width="150%" height="auto" autoPlay loop  type="video/mp4" /> */}
+              <img src={CuraPreview} />
             </div>
           </div>
         </div>
