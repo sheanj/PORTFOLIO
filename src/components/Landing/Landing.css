@@ -71,10 +71,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   height: 100%;
   width: inherit;
-  background-color: black;
+  background-color: rgb(6, 6, 8);
 }
 
 .about {
