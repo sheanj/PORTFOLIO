@@ -8,6 +8,7 @@ import Carrat from "../../assets/carrat.jsx";
 import Cura from "../Apps/Cards/Cura";
 import Covidata from "../Apps/Cards/Covidata";
 import About from '../Apps/Cards/About'
+import Portfolio from "../Apps/Projects/Portfolio";
 
 export default class Landing extends Component {
   state = {
@@ -85,6 +86,9 @@ export default class Landing extends Component {
           </div>
           <div className="project3">
             <About />
+          </div>
+          <div className="project4">
+            <Portfolio />
           </div>
         </viewport>
       </>

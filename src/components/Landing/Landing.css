@@ -141,7 +141,8 @@ h3 {
 .greeting,
 .project1,
 .project2,
-.project3 {
+.project3, 
+.project4 {
   padding: 0px;
   margin: 0px;
   width: 100%;
@@ -163,6 +164,12 @@ h3 {
   background-color: black;
 }
 
+.project4 {
+  top: 400%;
+  background: linear-gradient(#e8e8e8, #e0e0e0);
+  margin: 0 auto;
+}
+
 .btn {
   background-color: transparent;
   border: none;
@@ -173,6 +180,7 @@ h3 {
 .projectButtons {
   margin-left: 5%;
 }
+
 
 .iframe {
   position: fixed;
