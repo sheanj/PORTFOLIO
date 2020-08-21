@@ -1,3 +1,7 @@
+.portfolio {
+  height: 100%;
+}
+
 .projectCard {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -6,7 +10,7 @@
     color: #333;
     padding: 40px;
     max-width: 40%;
-    max-height: 70%;
+    max-height: 190%;
     position: sticky;
     top: 10px;
   }

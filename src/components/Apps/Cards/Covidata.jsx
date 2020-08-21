@@ -16,7 +16,7 @@ export default class Covidata extends Component {
           {this.props.iFrame ? (
             <div className="iframe fade-in">
               <Iframe
-                url="https://pages.git.generalassemb.ly/sheanj/COVIDATA-19/"
+                url="https://covidata19.netlify.app/"
                 width="100%"
                 height="100%"
                 id="myId"
