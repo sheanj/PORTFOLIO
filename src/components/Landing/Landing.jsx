@@ -59,7 +59,6 @@ export default class Landing extends Component {
                   I'm a software engineer in Brooklyn. {"}"}
                 </h1>
                 <br />
-                {/* <h3>Scroll to view what I'm working on</h3> */}
                 <br />
                 <Carrat />
               </span>
@@ -69,7 +68,6 @@ export default class Landing extends Component {
             className="project1"
             data-aos="fade-up"
             data-aos-anchor-placement="bottom-center"
-            // className="mobile-title"
           >
             <Cura 
             iFrame={this.state.curaiFrame}
@@ -87,9 +85,9 @@ export default class Landing extends Component {
           <div className="project3">
             <About />
           </div>
-          {/* <div className="project4">
+          <div className="project4">
             <Portfolio />
-          </div> */}
+          </div>
         </viewport>
       </>
     );
