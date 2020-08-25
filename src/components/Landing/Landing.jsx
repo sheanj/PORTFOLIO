@@ -87,9 +87,9 @@ export default class Landing extends Component {
           <div className="project3">
             <About />
           </div>
-          <div className="project4">
+          {/* <div className="project4">
             <Portfolio />
-          </div>
+          </div> */}
         </viewport>
       </>
     );
