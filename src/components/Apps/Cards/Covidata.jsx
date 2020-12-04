@@ -91,21 +91,21 @@ export default class Covidata extends Component {
               <h4>API Integrations:</h4>
               <ul>
                 <li>
-                  <a href="https://covidtracking.com/api" target="_blank">
+                  <a href="https://covidtracking.com/api" target="_blank" rel="noopener noreferrer">
                     <h6>The COVID Tracking Project</h6>
                   </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://newsapi.org/" target="_blank">
+                  <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">
                     <h6>News API</h6>
                   </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://api.propublica.org/congress" target="_blank">
+                  <a href="https://api.propublica.org/congress" target="_blank" rel="noopener noreferrer">
                     <h6>ProPublica Senators API</h6>
                   </a>
                 </li>
@@ -114,7 +114,7 @@ export default class Covidata extends Component {
           </div>
           <div className="covidRight">
             <div className="covidPreview" data-aos="fade-up">
-              <img src={CovidataPreview} />
+              <img src={CovidataPreview} alt="covidata preview"/>
             </div>
           </div>
         </div>

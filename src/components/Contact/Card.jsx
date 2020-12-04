@@ -8,7 +8,6 @@ import {
   FaLinkedin,
   FaPaperclip,
   FaInstagram,
-  FaYoutube,
   FaTwitter
 } from "react-icons/fa";
 import { IconContext } from "react-icons";

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../Landing/Landing.css";
 import Card from "../Contact/Card";
-import Carrat from "../../assets/carrat.jsx";
 import Cura from "../Apps/Cards/Cura";
 import Covidata from "../Apps/Cards/Covidata";
 import About from '../Apps/Cards/About'
@@ -51,7 +50,7 @@ export default class Landing extends Component {
         <header>
           <Card />
         </header>
-        <viewport className="landing">
+        <div className="landing">
             <div className="about">
               <div className="portrait fade-in"></div>
               <div className="intro">
@@ -61,12 +60,10 @@ export default class Landing extends Component {
                   I'M SHEAN
                   <br />
                 </h1>
-                <h3>I'm a developer<br />based in New York City.</h3>
+                <h3>I'm a developer<br />in New York City.</h3>
                 <br />
                 <br />
-                <Carrat />
             </div>
-            
             <div className="greetingFooter">
               <div className="footerTop">
                 <a href="https://www.tiktok.com/@softwareshean" target="_blank" rel="noopener noreferrer">
@@ -86,15 +83,15 @@ export default class Landing extends Component {
                   </a>
             </div>
               <div className="footerBottom">
-                <img src={html5} />
-                <img src={css3} />
-                <img src={javascript} />
-                <img src={react} />
-                <img src={nodejs} />
-                <img src={mongodb} />
-                <img src={ruby} />
-                <img src={rails} />
-                <img src={postgresql} />
+                <img src={html5} alt="language icons"/>
+                <img src={css3} alt="language icons"/>
+                <img src={javascript} alt="language icons"/>
+                <img src={react} alt="language icons"/>
+                <img src={nodejs} alt="language icons"/>
+                <img src={mongodb} alt="language icons"/>
+                <img src={ruby} alt="language icons"/>
+                <img src={rails} alt="language icons"/>
+                <img src={postgresql} alt="language icons"/>
               </div>
             </div>
             </div>
@@ -119,7 +116,7 @@ export default class Landing extends Component {
           <div className="project3">
             <About />
           </div>
-        </viewport>
+        </div>
       </>
     );
   }

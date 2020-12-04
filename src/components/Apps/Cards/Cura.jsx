@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import "./Cura.css";
 import CuraLogo from "../../../assets/CuraLogo.png";
 import AOS from "aos";
-import CovidataPreview from "../../../assets/CovidataPreview.png";
 import Iframe from "react-iframe";
 import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import CuraPreviewVideo from '../../../assets/CuraPreviewVideo.mp4';
-import CuraPreview from '../../../assets/CuraPreview.png'
+import CuraPreview from '../../../assets/cura-preview.png'
 
 export default class Cura extends Component {
   newTab() {
@@ -49,7 +47,7 @@ export default class Cura extends Component {
           )}
           <div className="curaLeft">
             <div className="curaHeader">
-              <img src={CuraLogo} />
+              <img src={CuraLogo} alt="cura application logo"/>
               <h1>CURA</h1>
               <div className="projectButtons">
                 <IconContext.Provider
@@ -93,7 +91,7 @@ export default class Cura extends Component {
               <h4>API Integrations:</h4>
               <ul>
                 <li>
-                  <a href="https://www.linkpreview.net/" target="_blank">
+                  <a href="https://www.linkpreview.net/" target="_blank" rel="noopener noreferrer">
                     <h6>LinkPreview</h6>
                   </a>
                 </li>
@@ -103,7 +101,7 @@ export default class Cura extends Component {
           <div className="curaRight" >
             <div className="curaVideo">
               {/* <video src={CuraPreviewVideo} width="150%" height="auto" autoPlay loop  type="video/mp4" /> */}
-              <img src={CuraPreview} />
+              <img src={CuraPreview} alt="cura application preview"/>
             </div>
           </div>
         </div>
