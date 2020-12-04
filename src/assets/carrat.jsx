@@ -4,8 +4,8 @@ import '../components/Landing/Landing.css'
 export default class carrat extends Component {
   render() {
     const divStyle = {
-      filter: 'invert(100%)'
-      // color: 'white',
+      filter: 'invert(100%)',
+      color: 'yellow',
       // backgroundClip: 'text',
       // backgroundImage: 'url(' + './background.png' + ')'
     };

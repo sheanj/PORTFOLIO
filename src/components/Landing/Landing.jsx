@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import "../Landing/Landing.css";
-import MyPortrait from "../../assets/me.jpeg";
-// import { Link } from "react-router-dom";
 import Card from "../Contact/Card";
-import FadeIn from "react-fade-in";
 import Carrat from "../../assets/carrat.jsx";
 import Cura from "../Apps/Cards/Cura";
 import Covidata from "../Apps/Cards/Covidata";
 import About from '../Apps/Cards/About'
-import Portfolio from "../Apps/Projects/Portfolio";
+import html5 from "../../assets/html5.png";
+import react from "../../assets/react.png";
+import javascript from "../../assets/javascript.png";
+import css3 from "../../assets/css3.png";
+import nodejs from "../../assets/nodejs.png";
+import mongodb from "../../assets/mongodb.png";
+import ruby from "../../assets/ruby.png";
+import rails from "../../assets/rails.png";
+import postgresql from "../../assets/postgresql.png";
 
 export default class Landing extends Component {
   state = {
@@ -47,23 +52,52 @@ export default class Landing extends Component {
           <Card />
         </header>
         <viewport className="landing">
-          <section className="greeting">
-            <img src={MyPortrait} alt="pic" className="fade-in" />
-            <div className="about fade-in">
-              <span>
+            <div className="about">
+              <div className="portrait fade-in"></div>
+              <div className="intro">
                 <h1>
-                  Hello, World.
+                  HI,
                   <br />
-                  {"{"} My name is Shean &&
+                  I'M SHEAN
                   <br />
-                  I'm a software engineer in Brooklyn. {"}"}
                 </h1>
+                <h3>I'm a developer<br />based in New York City.</h3>
                 <br />
                 <br />
                 <Carrat />
-              </span>
             </div>
-          </section>
+            
+            <div className="greetingFooter">
+              <div className="footerTop">
+                <a href="https://www.tiktok.com/@softwareshean" target="_blank" rel="noopener noreferrer">
+                  <div className="tiktok">
+                    <div className="tiktokicon">
+                  </div>
+                </div></a>
+                <a href="https://www.twitter.com/softwareshean" target="_blank" rel="noopener noreferrer">
+                <div className="twitter">
+                  <div className="twittericon"></div>
+                  </div>
+                  </a>
+                <a href="https://www.linkedin.com/in/sheanj/" target="_blank" rel="noopener noreferrer">
+                <div className="linkedin">
+                  <div className="linkedinicon"></div>
+                  </div>
+                  </a>
+            </div>
+              <div className="footerBottom">
+                <img src={html5} />
+                <img src={css3} />
+                <img src={javascript} />
+                <img src={react} />
+                <img src={nodejs} />
+                <img src={mongodb} />
+                <img src={ruby} />
+                <img src={rails} />
+                <img src={postgresql} />
+              </div>
+            </div>
+            </div>
           <div
             className="project1"
             data-aos="fade-up"
@@ -84,9 +118,6 @@ export default class Landing extends Component {
           </div>
           <div className="project3">
             <About />
-          </div>
-          <div className="project4">
-            <Portfolio />
           </div>
         </viewport>
       </>

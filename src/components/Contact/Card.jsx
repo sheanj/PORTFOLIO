@@ -6,7 +6,10 @@ import {
   FaPhone,
   FaGithub,
   FaLinkedin,
-  FaPaperclip
+  FaPaperclip,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
@@ -18,13 +21,15 @@ export default class Card extends Component {
           value={{
             style: {
               fontSize: "35px",
-              color: "#ffffff",
+              color: "#000000",
               paddingLeft: "8px",
-              paddingTop: "5px",
               paddingRight: "8px"
             },
           }}
         >
+          <a href="mailto:csheanjohnson@gmail.com">
+            <FaLinkedin />
+          </a>
           <a href="mailto:csheanjohnson@gmail.com">
             <FaEnvelope />
           </a>
@@ -51,7 +56,15 @@ export default class Card extends Component {
           href={Resume}
         >
             <FaPaperclip />
-        </a>
+          </a>
+          <a target="_blank"
+          rel="noopener noreferrer" href="https://instagram.com/softwareshean">
+            <FaInstagram />
+          </a>
+          <a target="_blank"
+          rel="noopener noreferrer" href="https://twitter.com/softwareshean">
+            <FaTwitter />
+          </a>
           </IconContext.Provider>
       </div>
     );
