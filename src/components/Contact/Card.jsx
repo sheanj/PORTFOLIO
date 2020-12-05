@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Card.css";
-// import Resume from '../../assets/shean_johnson_resume.pdf';
 import {
   FaEnvelope,
   FaPhone,
@@ -43,13 +42,6 @@ export default class Card extends Component {
           >
             <FaGithub />
           </a>
-        {/* <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={Resume}
-        >
-            <FaPaperclip />
-          </a> */}
           <a target="_blank"
           rel="noopener noreferrer" href="https://instagram.com/softwareshean">
             <FaInstagram />
