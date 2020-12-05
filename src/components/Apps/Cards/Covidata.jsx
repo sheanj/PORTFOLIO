@@ -1,49 +1,15 @@
 import React, { Component } from "react";
 import "./Covidata.css";
 import Covid from "../../../assets/Covid.png";
-import AOS from "aos";
-import CovidataPreview from "../../../assets/CovidataPreview.png";
-import Iframe from "react-iframe";
+import CovidataPreview from "../../../assets/covidata-preview.png";
 import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 export default class Covidata extends Component {
   render() {
-    AOS.init();
     return (
       <>
         <div className="covidContainer">
-          {this.props.iFrame ? (
-            <div className="iframe fade-in">
-              <Iframe
-                url="https://covidata19.netlify.app/"
-                width="100%"
-                height="100%"
-                id="myId"
-                className="myClassname"
-                display="initial"
-              />
-              <div className="covidClose">
-                <IconContext.Provider
-                  value={{
-                    style: {
-                      fontSize: "35px",
-                      color: "#000000",
-                      paddingLeft: "8px",
-                      paddingTop: "5px",
-                      paddingRight: "8px",
-                    },
-                  }}
-                >
-                  <button className="btn" onClick={this.props.close}>
-                    <FaWindowClose />
-                  </button>
-                </IconContext.Provider>
-              </div>
-            </div>
-          ) : (
-            <></>
-          )}
           <div className="covidLeft">
             <div className="covidHeader">
               <img src={Covid} alt="covid particle"/>
@@ -60,11 +26,11 @@ export default class Covidata extends Component {
                     },
                   }}
                 >
-                  <button className="btn" onClick={this.newTab}>
-                    <FaGithub />
+                  <button className="btn">
+                    <a href="https://github.com/sheanj/COVIDATA" target="_blank0" rel="noopener noreferrer"><FaGithub /></a>
                   </button>
                   <button className="btn">
-                    <FaGlobe onClick={this.props.view} />
+                    <a href="https://covidata19.netlify.app/" target="_blank0" rel="noopener noreferrer"><FaGlobe /></a>
                   </button>
                 </IconContext.Provider>
               </div>
@@ -91,21 +57,21 @@ export default class Covidata extends Component {
               <h4>API Integrations:</h4>
               <ul>
                 <li>
-                  <a href="https://covidtracking.com/api" target="_blank">
+                  <a href="https://covidtracking.com/api" target="_blank" rel="noopener noreferrer">
                     <h6>The COVID Tracking Project</h6>
                   </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://newsapi.org/" target="_blank">
+                  <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">
                     <h6>News API</h6>
                   </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://api.propublica.org/congress" target="_blank">
+                  <a href="https://api.propublica.org/congress" target="_blank" rel="noopener noreferrer">
                     <h6>ProPublica Senators API</h6>
                   </a>
                 </li>
@@ -114,7 +80,7 @@ export default class Covidata extends Component {
           </div>
           <div className="covidRight">
             <div className="covidPreview" data-aos="fade-up">
-              <img src={CovidataPreview} />
+              <img src={CovidataPreview} alt="covidata preview"/>
             </div>
           </div>
         </div>

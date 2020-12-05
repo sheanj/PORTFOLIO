@@ -6,8 +6,15 @@
   background-color: rgb(221, 226, 226);
 }
 
-.curaRight, .curaLeft {
+.curaRight,
+.curaLeft {
   width: 50%;
+}
+
+.curaLeft {
+  position: relative;
+  z-index: 10;
+  left: -4%;
 }
 
 .curaContainer img {
@@ -59,10 +66,10 @@
   align-items: center;
 }
 
-.curaVideo video {
+.curaVideo img {
   position: relative;
-  left: 24%;
-  margin-top: 10%;
+  left: -35%;
+  zoom: 30%;
 }
 
 .curaBlurb {
@@ -76,26 +83,45 @@
   color: grey;
 }
 
-.curaBlurb ul, li, h4 {
+.curaBlurb ul,
+li,
+h4 {
   list-style-type: none;
   margin: 0;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
+  .curaHeader {
+    width: 100%;
+  }
+
+  .curaHeader h1 {
+    color: transparent;
+  }
+
   .curaHeader img {
     position: relative;
-    left: -5%;
+    left: 6%;
     top: 1%;
     zoom: 40%;
+  }
+
+  .curaProjectButtons {
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    padding: -1%;
   }
 
   .curaLeft {
     width: 100%;
   }
-  
+
   .curaBlurb {
     position: relative;
     left: 9%;
+    top: 5%;
     width: 100%;
   }
 
@@ -105,8 +131,18 @@
     left: -82%;
   }
 
-  video {
-    width: 550%;
-    height: auto;
+  .curaVideo img {
+    display: none;
+  }
+
+  .curaVideo {
+    position: relative;
+    top: -20%;
+    margin-left: -120%;
+    background-image: url(../../../assets/cura-mobile-preview.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1600%;
+    height: 55%;
   }
 }

@@ -1,57 +1,19 @@
 import React, { Component } from "react";
 import "./Cura.css";
 import CuraLogo from "../../../assets/CuraLogo.png";
-import AOS from "aos";
-import CovidataPreview from "../../../assets/CovidataPreview.png";
-import Iframe from "react-iframe";
 import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import CuraPreviewVideo from '../../../assets/CuraPreviewVideo.mp4';
-import CuraPreview from '../../../assets/CuraPreview.png'
+import CuraPreview from '../../../assets/cura-preview.png'
 
 export default class Cura extends Component {
-  newTab() {
-    window.open("https://github.com/sheanj/CURA", "_blank");
-  }
   render() {
-    AOS.init();
     return (
       <>
         <div className="curaContainer">
-          {this.props.iFrame ? (
-            <div className="iframe fade-in">
-              <Iframe
-                url="http://cura-app.netlify.app/"
-                width="100%"
-                height="100%"
-                display="initial"
-              />
-              <div className="curaClose">
-              <IconContext.Provider
-                  value={{
-                    style: {
-                      fontSize: "35px",
-                      color: "#000000",
-                      paddingLeft: "8px",
-                      paddingTop: "5px",
-                      paddingRight: "8px",
-                    },
-                  }}
-                >
-                  <button className="btn" onClick={this.props.close}>
-                    <FaWindowClose />
-                  </button>
-                </IconContext.Provider>
-              </div>
-            </div>
-          ) : (
-            <></>
-          )}
           <div className="curaLeft">
             <div className="curaHeader">
-              <img src={CuraLogo} />
-              <h1>CURA</h1>
-              <div className="projectButtons">
+              <img src={CuraLogo} alt="cura application logo"/>
+              <div className="curaProjectButtons">
                 <IconContext.Provider
                   value={{
                     style: {
@@ -67,10 +29,12 @@ export default class Cura extends Component {
                     <FaGithub />
                   </button>
                   <button className="btn">
-                    <FaGlobe onClick={this.props.view} />
+                    <a href="https://cura-app.netlify.app/" target="_blank0" rel="noopener noreferrer"><FaGlobe /></a>
                   </button>
                 </IconContext.Provider>
               </div>
+                            <h1>CURA</h1>
+
             </div>
             <div className="curaBlurb">
               <h3>
@@ -93,7 +57,7 @@ export default class Cura extends Component {
               <h4>API Integrations:</h4>
               <ul>
                 <li>
-                  <a href="https://www.linkpreview.net/" target="_blank">
+                  <a href="https://www.linkpreview.net/" target="_blank" rel="noopener noreferrer">
                     <h6>LinkPreview</h6>
                   </a>
                 </li>
@@ -102,8 +66,7 @@ export default class Cura extends Component {
           </div>
           <div className="curaRight" >
             <div className="curaVideo">
-              {/* <video src={CuraPreviewVideo} width="150%" height="auto" autoPlay loop  type="video/mp4" /> */}
-              <img src={CuraPreview} />
+              <img src={CuraPreview} alt="cura application preview"/>
             </div>
           </div>
         </div>

@@ -7,90 +7,170 @@
   behavior: "smooth";
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .landing {
   position: relative;
   top: 0;
   margin: 0 auto;
+  padding-top: 1%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: inherit;
   overflow-y: scroll;
   overflow-x: hidden;
-}
-
-.greeting {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: inherit;
-  background-color: rgb(6, 6, 8);
+  background-color: rgb(139, 208, 244);
 }
 
 .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  background-color: rgb(139, 208, 244);
+  width: 100%;
+  height: inherit;
+  color: rgb(255, 37, 57);
+}
+
+.portrait {
+  width: 50%;
+  height: 60%;
+  margin-top: 8%;
+  background-image: url(../../assets/Portrait.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 3%;
+  border-radius: 25px;
+  background-position: center;
+  filter: drop-shadow(0 0.2rem 0.9rem rgb(48, 134, 211));
+}
+
+.intro {
+  width: 30%;
+  margin-top: 20%;
+  margin-left: 1%;
+}
+
+.greetingFooter {
   position: relative;
-  left: -5%;
+  display: flex;
   flex-direction: column;
-  color: transparent;
-  background-clip: text;
-  background-image: url(../../assets/background.png);
-  -webkit-background-clip: text;
-  -webkit-background-image: url(../../assets/background.png);
-  -moz-background-clip: text;
-  -moz-background-image: url(../../assets/background.png);
-  -o-background-clip: text;
-  -o-background-image: url(../../assets/background.png);
-  -ms-background-clip: text;
-  -ms-background-image: url(../../assets/background.png);
+  width: 60%;
+  height: 100%;
+  padding-top: 3%;
+}
+
+.footerTop {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+}
+
+.footerTop a {
+  margin: none;
+  padding: none;
+}
+
+.twitter {
+  position: relative;
+  margin-top: 0%;
+  margin-left: 10%;
+  height: 350px;
+  width: 405px;
+  background-image: url(../../assets/twitter-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  z-index: 100;
+  filter: drop-shadow(0 0.2rem 0.3rem grey);
+}
+
+.tiktok {
+  position: relative;
+  margin-left: 100%;
+  height: 450px;
+  width: 225px;
+  background-image: url(../../assets/tik-tok-preview.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  z-index: 99;
+  filter: drop-shadow(0 0.2rem 0.3rem grey);
+}
+
+.linkedin {
+  position: relative;
+  margin-top: 0%;
+  margin-left: -60%;
+  height: 499px;
+  width: 340px;
+  background-image: url(../../assets/linkedin-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  filter: drop-shadow(0 0.2rem 0.3rem grey);
+  z-index: 95;
+}
+
+.tiktokicon,
+.twittericon,
+.linkedinicon {
+  position: relative;
+  top: -8%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25%;
+  width: 25%;
+  filter: none;
+}
+
+.tiktokicon {
+  background-image: url(../../assets/tiktokicon.png);
+  margin-left: 70%;
+}
+
+.twittericon {
+  background-image: url(../../assets/twittericon.png);
+  margin-left: 80%;
+  /* height: 25%; */
+}
+
+.linkedinicon {
+  background-image: url(../../assets/linkedin-icon.png);
+  margin-left: 75%;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 80%;
+  height: 30%;
+  padding-top: 1%;
+  margin: 2% 0% 0% 10%;
+}
+
+.footerBottom img {
+  height: 30%;
+  width: calc(80% / 9);
+  padding-right: 1%;
+}
+
+.about h1 {
+  font-size: 48px;
+  font-family: "Aldrich", sans-serif, uppercase;
+  font-weight: 500;
+}
+
+.about h3 {
+  color: black;
+  font-family: "Aldrich", sans-serif;
+  margin-top: 20px;
 }
 
 .project {
@@ -101,24 +181,22 @@
 header {
   position: relative;
   top: 0;
+  height: 40px;
   margin: 0px auto;
   padding-right: 5%;
-  /* margin-top: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  /* height: fit-content; */
-  justify-content: flex-end;
-  background-color: black;
+  justify-content: flex-start;
+  background-color: rgba(139, 208, 244);
   z-index: 2;
+  backdrop-filter: blur(100px);
 }
 
 .landing img {
   position: relative;
-  bottom: -10%;
-  height: 80vh;
 }
 
 a {
@@ -141,7 +219,7 @@ h3 {
 .greeting,
 .project1,
 .project2,
-.project3, 
+.project3,
 .project4 {
   padding: 0px;
   margin: 0px;
@@ -181,7 +259,6 @@ h3 {
   margin-left: 5%;
 }
 
-
 .iframe {
   position: fixed;
   height: 100%;
@@ -191,37 +268,90 @@ h3 {
   z-index: 3;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .landing {
-    width: 100%;
-    height: inherit;
+    flex-direction: column;
+    height: 145vh;
   }
-
-  .landing img {
-    position: relative;
-    height: 50vh;
-    top: 25%;
-    left: 18%;
-    border-radius: 0px;
-  }
-
-  .greeting {
-    width: 100%;
-  }
-
   .about {
+    position: absolute;
+  }
+
+  .intro h3 {
+    color: white;
+  }
+
+  .portrait {
+    position: absolute;
+    width: 90%;
+    height: 53%;
+    margin: 3% 0 0 0;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     position: relative;
-    top: -15%;
-    left: -80%;
+    margin: 20% 0% 0% 25%;
+    height: 48%;
     width: 100%;
+  }
+
+  .greetingFooter {
+    margin: 85% 0 0 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .footerTop {
+    margin: 0% 0% 0% -80%;
+    height: 40%;
+    width: 150%;
+  }
+
+  .footerBottom {
+    justify-content: center;
+    height: 50px;
+    width: 160%;
+    margin: -0% 0% 0% -85%;
+  }
+
+  .footerBottom img {
+    height: 90%;
+  }
+
+  .tiktok,
+  .twitter,
+  .linkedin {
+    position: relative;
+    margin: 20% 0 0 0;
+    border-radius: 10px;
+  }
+
+  .twitter {
+    width: 215px;
+    height: 185px;
+    margin-left: 20%;
+  }
+
+  .tiktok {
+    height: 300px;
+    width: 150px;
+    margin-left: 90%;
+  }
+
+  .linkedin {
+    height: 350px;
+    width: 239px;
+    margin-left: -60%;
   }
 
   header {
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     height: 6vh;
-    justify-content: flex-end;
-    background-color: black;
+    justify-content: center;
     z-index: 2;
   }
 
@@ -234,4 +364,3 @@ h3 {
     z-index: 3;
   }
 }
-

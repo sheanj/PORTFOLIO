@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./Card.css";
-import Resume from '../../assets/Shean_Johnson_Resume.pdf'
+import Resume from '../../assets/SHEAN_JOHNSON_RESUME.pdf'
 import {
   FaEnvelope,
   FaPhone,
   FaGithub,
   FaLinkedin,
-  FaPaperclip
+  FaPaperclip,
+  FaInstagram,
+  FaTwitter
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
@@ -18,13 +20,16 @@ export default class Card extends Component {
           value={{
             style: {
               fontSize: "35px",
-              color: "#ffffff",
+              color: "#000000",
               paddingLeft: "8px",
-              paddingTop: "5px",
               paddingRight: "8px"
             },
           }}
         >
+          <a href="https://www.linkedin.com/in/sheanj/" target="_blank"
+          rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
           <a href="mailto:csheanjohnson@gmail.com">
             <FaEnvelope />
           </a>
@@ -41,17 +46,18 @@ export default class Card extends Component {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/sheanj/"
-        >
-            <FaLinkedin />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
           href={Resume}
         >
             <FaPaperclip />
-        </a>
+          </a>
+          <a target="_blank"
+          rel="noopener noreferrer" href="https://instagram.com/softwareshean">
+            <FaInstagram />
+          </a>
+          <a target="_blank"
+          rel="noopener noreferrer" href="https://twitter.com/softwareshean">
+            <FaTwitter />
+          </a>
           </IconContext.Provider>
       </div>
     );
