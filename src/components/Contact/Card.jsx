@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Card.css";
-import Resume from '../../assets/SHEAN_JOHNSON_RESUME.pdf'
+import Resume from '../../assets/shean_johnson_resume.pdf';
 import {
   FaEnvelope,
   FaPhone,

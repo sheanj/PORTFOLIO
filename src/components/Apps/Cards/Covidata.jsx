@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Covidata.css";
 import Covid from "../../../assets/Covid.png";
 import CovidataPreview from "../../../assets/covidata-preview.png";
-import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 export default class Covidata extends Component {

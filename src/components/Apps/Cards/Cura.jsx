@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Cura.css";
 import CuraLogo from "../../../assets/CuraLogo.png";
-import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CuraPreview from '../../../assets/cura-preview.png'
 
