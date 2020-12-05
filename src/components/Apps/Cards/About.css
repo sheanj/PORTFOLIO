@@ -3,6 +3,9 @@
   flex-direction: column;
   height: 95vh;
   width: 100vw;
+  background-image: url(../../../assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .aboutDiv {
@@ -11,25 +14,17 @@
   position: relative;
   left: 18%;
   top: 20%;
-  background-color: black;
+  font-family: "Aldrich", sans-serif;
   color: white;
   width: 65%;
+  font-size: 22px;
 }
 
 .aboutDiv h2 {
   margin-top: 0;
   text-align: justify;
-  color: transparent;
-  background-clip: text;
-  background-image: url(../../../assets/aboutbg.png);
-  -webkit-background-clip: text;
-  -webkit-background-image: url(../../../assets/aboutbg.png);
-  -moz-background-clip: text;
-  -moz-background-image: url(../../../assets/aboutbg.png);
-  -o-background-clip: text;
-  -o-background-image: url(../../../assets/aboutbg.png);
-  -ms-background-clip: text;
-  -ms-background-image: url(../../../assets/aboutbg.png);
+  color: black;
+  font-weight: 900;
 }
 
 .languageIcon {
@@ -50,16 +45,19 @@
   width: 5%;
   padding-right: 1%;
 }
+
 @media only screen and (max-width: 500px) {
   .aboutDiv {
-    top: 4%;
-    left: 20%;
+    top: 5%;
+    left: 15%;
     width: 77%;
     margin-top: 0;
+    font-size: 16px;
   }
-  
+
   .aboutDiv h2 {
     text-align: left;
+    font-weight: 900;
   }
 
   .languageIcon {

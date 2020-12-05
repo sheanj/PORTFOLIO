@@ -1,54 +1,19 @@
 import React, { Component } from "react";
 import "./Cura.css";
 import CuraLogo from "../../../assets/CuraLogo.png";
-import AOS from "aos";
-import Iframe from "react-iframe";
 import { FaGithub, FaGlobe, FaWindowClose } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CuraPreview from '../../../assets/cura-preview.png'
 
 export default class Cura extends Component {
-  newTab() {
-    window.open("https://github.com/sheanj/CURA", "_blank");
-  }
   render() {
-    AOS.init();
     return (
       <>
         <div className="curaContainer">
-          {this.props.iFrame ? (
-            <div className="iframe fade-in">
-              <Iframe
-                url="http://cura-app.netlify.app/"
-                width="100%"
-                height="100%"
-                display="initial"
-              />
-              <div className="curaClose">
-              <IconContext.Provider
-                  value={{
-                    style: {
-                      fontSize: "35px",
-                      color: "#000000",
-                      paddingLeft: "8px",
-                      paddingTop: "5px",
-                      paddingRight: "8px",
-                    },
-                  }}
-                >
-                  <button className="btn" onClick={this.props.close}>
-                    <FaWindowClose />
-                  </button>
-                </IconContext.Provider>
-              </div>
-            </div>
-          ) : (
-            <></>
-          )}
           <div className="curaLeft">
             <div className="curaHeader">
               <img src={CuraLogo} alt="cura application logo"/>
-              <div className="projectButtons">
+              <div className="curaProjectButtons">
                 <IconContext.Provider
                   value={{
                     style: {

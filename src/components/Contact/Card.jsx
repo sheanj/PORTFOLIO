@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Card.css";
-import Resume from '../../assets/Shean_Johnson_Resume.pdf'
+import Resume from '../../assets/SHEAN_JOHNSON_RESUME.pdf'
 import {
   FaEnvelope,
   FaPhone,
@@ -26,7 +26,8 @@ export default class Card extends Component {
             },
           }}
         >
-          <a href="mailto:csheanjohnson@gmail.com">
+          <a href="https://www.linkedin.com/in/sheanj/" target="_blank"
+          rel="noopener noreferrer">
             <FaLinkedin />
           </a>
           <a href="mailto:csheanjohnson@gmail.com">
@@ -42,13 +43,6 @@ export default class Card extends Component {
           >
             <FaGithub />
           </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/sheanj/"
-        >
-            <FaLinkedin />
-        </a>
         <a
           target="_blank"
           rel="noopener noreferrer"

@@ -67,17 +67,17 @@ export default class Landing extends Component {
             <div className="greetingFooter">
               <div className="footerTop">
                 <a href="https://www.tiktok.com/@softwareshean" target="_blank" rel="noopener noreferrer">
-                  <div className="tiktok">
+                  <div className="tiktok fade-in">
                     <div className="tiktokicon">
                   </div>
                 </div></a>
                 <a href="https://www.twitter.com/softwareshean" target="_blank" rel="noopener noreferrer">
-                <div className="twitter">
+                <div className="twitter fade-in">
                   <div className="twittericon"></div>
                   </div>
                   </a>
                 <a href="https://www.linkedin.com/in/sheanj/" target="_blank" rel="noopener noreferrer">
-                <div className="linkedin">
+                <div className="linkedin fade-in">
                   <div className="linkedinicon"></div>
                   </div>
                   </a>
