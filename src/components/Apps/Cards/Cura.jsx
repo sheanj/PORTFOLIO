@@ -48,7 +48,6 @@ export default class Cura extends Component {
           <div className="curaLeft">
             <div className="curaHeader">
               <img src={CuraLogo} alt="cura application logo"/>
-              <h1>CURA</h1>
               <div className="projectButtons">
                 <IconContext.Provider
                   value={{
@@ -65,10 +64,12 @@ export default class Cura extends Component {
                     <FaGithub />
                   </button>
                   <button className="btn">
-                    <FaGlobe onClick={this.props.view} />
+                    <a href="https://cura-app.netlify.app/" target="_blank0" rel="noopener noreferrer"><FaGlobe /></a>
                   </button>
                 </IconContext.Provider>
               </div>
+                            <h1>CURA</h1>
+
             </div>
             <div className="curaBlurb">
               <h3>
@@ -100,7 +101,6 @@ export default class Cura extends Component {
           </div>
           <div className="curaRight" >
             <div className="curaVideo">
-              {/* <video src={CuraPreviewVideo} width="150%" height="auto" autoPlay loop  type="video/mp4" /> */}
               <img src={CuraPreview} alt="cura application preview"/>
             </div>
           </div>

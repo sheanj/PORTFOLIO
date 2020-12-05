@@ -271,7 +271,7 @@ h3 {
 @media only screen and (max-width: 800px) {
   .landing {
     flex-direction: column;
-    height: 140vh;
+    height: 145vh;
   }
   .about {
     position: absolute;
@@ -284,8 +284,8 @@ h3 {
   .portrait {
     position: absolute;
     width: 90%;
-    height: 55%;
-    margin: 3% 0 0 1%;
+    height: 53%;
+    margin: 3% 0 0 0;
   }
 
   .intro {
