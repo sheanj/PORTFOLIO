@@ -27,7 +27,7 @@ export default class Covidata extends Component {
                   }}
                 >
                   <button className="btn">
-                    <a href="https://github.com/sheanj/COVIDATA" target="_blank0" rel="noopener noreferrer"><FaGithub /></a>
+                    <a href="https://github.com/softwareshean/COVIDATA" target="_blank0" rel="noopener noreferrer"><FaGithub /></a>
                   </button>
                   <button className="btn">
                     <a href="https://covidata19.netlify.app/" target="_blank0" rel="noopener noreferrer"><FaGlobe /></a>
