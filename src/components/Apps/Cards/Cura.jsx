@@ -25,8 +25,8 @@ export default class Cura extends Component {
                     },
                   }}
                 >
-                  <button className="btn" onClick={this.newTab}>
-                    <FaGithub />
+                  <button className="btn">
+                    <a href="https://github.com/softwareshean/CURA" target="_blank0" rel="noopener noreferrer"><FaGithub /></a>
                   </button>
                   <button className="btn">
                     <a href="https://cura-app.netlify.app/" target="_blank0" rel="noopener noreferrer"><FaGlobe /></a>
