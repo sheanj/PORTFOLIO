@@ -38,7 +38,7 @@ export default class Card extends Component {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/sheanj"
+            href="https://github.com/softwareshean"
           >
             <FaGithub />
           </a>
